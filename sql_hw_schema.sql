@@ -26,3 +26,7 @@ CREATE TABLE salaries(emp_no INTEGER,
                       from_date DATE,
                       to_date DATE);
 
+CREATE TABLE titles(emp_no INTEGER,
+                    title VARCHAR(35),
+                    from_date DATE,
+                    to_date DATE);

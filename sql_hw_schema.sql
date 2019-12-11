@@ -20,3 +20,9 @@ CREATE TABLE employees(emp_no INTEGER,
                        last_name VARCHAR(30),
                        gender VARCHAR(5),
                        hire_date DATE);
+
+CREATE TABLE salaries(emp_no INTEGER,
+                      salary INTEGER,
+                      from_date DATE,
+                      to_date DATE);
+

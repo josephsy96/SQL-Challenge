@@ -1,4 +1,4 @@
-
+-- Create Database called Pewlett_Hackard
 --Create new tables for database
 
 CREATE TABLE departments(dept_no VARCHAR(10), 

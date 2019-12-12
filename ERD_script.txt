@@ -1,0 +1,53 @@
+ERD Script
+
+
+
+Departments
+--- 
+dept_no PK int FK >-< Department_Manager.dept_no
+Marketing
+Finance
+Human_Resources
+Production
+Development
+Quality_Management
+Sales
+Research
+Customer_Service 
+
+Employee
+---
+EmployeeID PK int FK -< Title.EmployeeID
+birth_date
+first_name
+last_name
+gender
+hire_date
+
+Title
+-
+EmployeeID PK int FK >- Salaries.EmployeeID
+title String
+from_date
+to_date
+
+Salaries
+-
+EmployeeID PK int FK -< Department_Employee.EmployeeID
+salary
+from_date
+to_date
+
+Department_Manager
+-
+EmployeeID PK int FK >- Department_Employee.EmployeeID
+dept_no
+from_date
+to_date
+
+Department_Employee
+-
+EmployeeID PK int
+dept_no FK >-< Department_Manager.dept_no
+from_date
+to_date
